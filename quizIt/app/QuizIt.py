@@ -177,6 +177,7 @@ class QuizIt:
         self.num_quess = self.num_var.get()
         self.form = self.form_var.get()
         self.usr = self.usr_name.get()
+        self.end = False
         if self.usr=='' or self.usr.isspace():
             self.error['text'] = 'Please enter a valid username'
             self.error.configure(foreground='red', font='Helvetica 9')
@@ -398,10 +399,12 @@ class QuizIt:
             self.ques_num+=1
             if self.ques_num >= len(self.questions):
                 self.print_results()
+                self.end = True
                 self.quitt()
                 self.ques_num = 0
                 self.score = 0
             else:
+                self.end = False
                 try:
                     self.frame_score.destroy()
                     self.score_ans.destroy()
@@ -416,11 +419,16 @@ class QuizIt:
         """ 
         Destroys the Quiz window with the entire progress.
          """
-        sure = messagebox.askyesno("askyesno", "Your score won't be considered if you quit. Are you sure you want to quit?", parent=self.new_window)
-        if sure==True:
+        if self.end:
             self.new_window.destroy()
             self.score = 0
             self.ques_num = 0
+        else:
+            sure = messagebox.askyesno("askyesno", "Your score won't be considered if you quit. Are you sure you want to quit?", parent=self.new_window)
+            if sure:
+                self.new_window.destroy()
+                self.score = 0
+                self.ques_num = 0
         
     def print_results(self):
         self.scores_users[f'{self.usr} on {datetime.now().strftime("%m/%d/%Y at %H:%M:%S")} scored'] = f'{self.score} out of {self.num_quess} in the form of {self.form}'
