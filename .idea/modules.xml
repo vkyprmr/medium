@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../local/.idea/local.iml" filepath="$PROJECT_DIR$/../../local/.idea/local.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/medium.iml" filepath="$PROJECT_DIR$/.idea/medium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../projectGain/.idea/projectGain.iml" filepath="$PROJECT_DIR$/../projectGain/.idea/projectGain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../projectIncKnowHow/.idea/projectIncKnowHow.iml" filepath="$PROJECT_DIR$/../projectIncKnowHow/.idea/projectIncKnowHow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../projectPersonal/.idea/projectPersonal.iml" filepath="$PROJECT_DIR$/../projectPersonal/.idea/projectPersonal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../test/.idea/test.iml" filepath="$PROJECT_DIR$/../test/.idea/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../teams/git/timeseries/.idea/timeseries.iml" filepath="$PROJECT_DIR$/../../../teams/git/timeseries/.idea/timeseries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vkyprmr/.idea/vkyprmr.iml" filepath="$PROJECT_DIR$/../vkyprmr/.idea/vkyprmr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../work/.idea/work.iml" filepath="$PROJECT_DIR$/../work/.idea/work.iml" />
+    </modules>
+  </component>
+</project>
