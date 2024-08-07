@@ -1,0 +1,157 @@
+/* Header */
+/* [data-testid="stHeader"] {
+  display: none;
+} */
+[data-testid="stDecoration"] {
+  display: none;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+  border-radius: 0 25px 25px 0;
+  box-shadow: 1px 0 2px #d4dee3;
+  background-color: #f3f5f775;
+  width: 300px !important;
+}
+.st-emotion-cache-dar4mz {
+  max-width: 300px;
+  min-width: 250px;
+}
+
+/* Expander */
+[data-testid="stExpander"] details {
+  box-shadow: 0 1px 1px #d4dee3;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  border-radius: 25px;
+  margin: 1em 0 3em 0;
+}
+[data-testid="stExpander"]:hover details {
+  border: 1px solid #0fbaa675;
+  border-radius: 25px;
+}
+
+/* Popover body */
+[data-testid="stPopoverBody"] {
+  box-shadow: 0 1px 1px #d4dee3;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  padding: 1em 30px 1em 30px;
+  margin: 1em 0 1em 0;
+}
+
+/* Buttons */
+[data-testid="stButton"] {
+  box-shadow: 0 1px 1px #d4dee3;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  text-align: center;
+}
+[data-testid="stButton"]:hover {
+  box-shadow: 0 1px 1px #d4dee3;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  text-align: center;
+  background-color: #0fbaa6;
+  color: #000000;
+}
+
+/* Link Buttons */
+[data-testid="baseLinkButton-secondary"] {
+  box-shadow: 0 1px 1px #d4dee3;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  text-align: center;
+}
+[data-testid="baseLinkButton-secondary"]:hover {
+  box-shadow: 0 1px 1px #d4dee3;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  text-align: center;
+  background-color: #0fbaa6;
+  color: #000000;
+}
+
+/* Form Submit Button */
+[data-testid="baseButton-secondaryFormSubmit"] {
+  box-shadow: 0 1px 1px #d4dee3;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  text-align: center;
+}
+[data-testid="baseButton-secondaryFormSubmit"]:hover {
+  box-shadow: 0 1px 1px #d4dee3;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  text-align: center;
+  background-color: #0fbaa6;
+  color: #000000;
+}
+
+/* Secondary button */
+[data-testid="baseButton-secondary"] {
+  box-shadow: 0 1px 1px #d4dee3;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  text-align: center;
+}
+[data-testid="baseButton-secondary"]:hover {
+  box-shadow: 0 1px 1px #d4dee3;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.025);
+  text-align: center;
+  background-color: #0fbaa6;
+  color: #000000;
+}
+[data-testid="baseButton-secondary"]:focus:not(:active) {
+  box-shadow: 0 1px 1px #d4dee3;
+  border-radius: 25px;
+  border: 1px solid #0fbaa6;
+  background-color: #0fbaa650;
+  text-align: center;
+  color: #000000;
+}
+
+/* Slider Selected */
+[data-testid="stThumbValue"] {
+  font-family: sans-serif;
+}
+
+/* Slider Min Max */
+.st-emotion-cache-1inwz65 {
+  font-family: sans-serif;
+}
+
+/* Slider */
+[data-testid="stSlider"] {
+  padding: 2.5% 1% 2.5% 1%;
+}
+
+/* Horizontal Radio Buttons */
+div.row-widget.stRadio > div {
+  flex-direction: row;
+  justify-content: justify;
+  padding: 0.5em 0 0 0;
+}
+
+/* Stylable containers */
+.stylable-redp {
+  color: red;
+}
+
+/* Green button by default with hover in orange */
+.stylable-greenb {
+  background-color: #0fbaa6;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: center;
+}
+.stylable-greenb:hover {
+  background-color: #ff8c00;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 0.5em 1em 0.5em 1em;
+  text-align: center;
+}
