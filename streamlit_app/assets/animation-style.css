@@ -1,0 +1,113 @@
+/* Key frames */
+/* Fade-in Annimation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Write-Check annimation from left to right */
+@keyframes write-check {
+  0% {
+    content: "";
+    width: 0;
+    overflow: hidden;
+  }
+  50% {
+    content: "✔";
+    width: 50%;
+  }
+  100% {
+    content: "✔";
+    width: 100%;
+  }
+}
+/* Define the blinking animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Growing annimation */
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Header */
+/* [data-testid="stHeader"] {
+  display: none;
+} */
+
+/* Notification */
+[data-testid="stNotification"] {
+  box-shadow: 0 1px 1px #d4dee3;
+  border-radius: 10px;
+  margin: 1em 0 0 0;
+}
+
+/* Info */
+/* Flexbox container to align icon and text vertically */
+[data-testid="stNotificationContentInfo"] .st-emotion-cache-1nmtqlb {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+/* Padding to the left of info message */
+[data-testid="stNotificationContentInfo"]
+  [data-testid="stMarkdownContainer"]
+  p {
+  padding-left: 1em;
+}
+/* Apply the blinking animation to the error message box icon */
+[data-testid="stNotificationContentInfo"] [data-testid="stAlertDynamicIcon"] {
+  /* animation: fade-in 1s ease-in-out forwards; */
+  animation: grow 0.5s ease-out forwards;
+}
+
+/* Success */
+/* Flexbox container to align icon and text vertically */
+[data-testid="stNotificationContentSuccess"] .st-emotion-cache-1nmtqlb {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+/* Padding to the left of info message */
+[data-testid="stNotificationContentSuccess"]
+  [data-testid="stMarkdownContainer"]
+  p {
+  padding-left: 1em;
+}
+[data-testid="stNotificationContentSuccess"]
+  [data-testid="stAlertDynamicIcon"] {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: write-check 1s steps(100) forwards;
+}
+
+/* Error */
+/* Flexbox container to align icon and text vertically */
+[data-testid="stNotificationContentError"] .st-emotion-cache-1nmtqlb {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+/* Apply the blinking animation to the error message box icon */
+[data-testid="stNotificationContentError"] [data-testid="stAlertDynamicIcon"] {
+  animation: blink 1s infinite;
+}
+/* Padding to the left of error message */
+[data-testid="stNotificationContentError"]
+  [data-testid="stMarkdownContainer"]
+  p {
+  padding-left: 1em;
+}
